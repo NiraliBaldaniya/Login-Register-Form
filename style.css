@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+   background: url(https://img.freepik.com/free-vector/background-gradient-green-color-designs-modern_343694-2132.jpg?semt=ais_user_personalization&w=740&q=80) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   }
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+   }
+
+.loginform{
+    color: aliceblue;
+    font-size: 30px;
+    user-select: none;
+    padding-left: 30px;
+   }
+
+.page1 a{
+    color:aliceblue ;
+    font-size:20px ;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+   }
+
+ .page1 a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    background: #f3f2f2;
+    transform: scaleX(0) ;
+    transition: 0.5s;
+   }
+
+.page1 a:hover::after{
+    transform: scaleX(1);
+   }
+
+.btn{
+    color: #000;
+    cursor: pointer;
+    border: 2px solid #f0e8e8;
+    border-radius:10px ;
+    outline: none;
+    font-size: 20PX;
+    margin-right: 20px;
+    width: 100px;     
+    height: 50px;   
+    background: #eeebeb;
+   }
+  
+h2{
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'poppins', serif;
+   }
+
+.wrapper{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    width: 400px;
+    height: 440px;
+    border-radius: 20px;
+    position: relative;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   }
+ 
+.input-box{
+    position: relative;
+    width: 300px;
+    margin: 30px 0;
+     border-bottom: 2px solid #1a1919;
+  }
+
+.input-box input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #0f0f0f;
+    font-size: 16px;
+    padding: 0 35px 0 5px;
+   }
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #161616;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+   }
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -5px;
+    font-size: 15px;
+   }
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #080808;
+   }
+
+.remember-forgot{
+    color: #111111;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    font-size:13px;
+    gap: 2px;
+    justify-content: flex-start;
+   }
+
+.remember-forgot a{
+    margin-left: 70px; 
+    text-decoration: none;
+    color: #4b048d;
+   }
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+   }
+
+button{
+    width: 100%;
+    height: 40px;
+    background: #1b1b24;
+    color: #f0e8e8;
+    font-size: 18px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+   }
+
+button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+   }
+
+
+.not-have-account{
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0 10px;
+    font-weight: 500;
+   }
+
+.not-have-account a{
+    color: #4b048d;
+    text-decoration: none;
+   }
+   
+.not-have-account a:hover{
+    text-decoration: underline;
+   }
+
+.icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background: #000;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: #f0e8e8;
+    border-bottom-left-radius: 20px  ;
+   }
+

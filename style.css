@@ -1,8 +1,8 @@
-body{
+  body{
     margin: 0;
     padding: 0;
     font-family: 'poppins',sans-serif;
-   background: url(https://img.freepik.com/free-vector/background-gradient-green-color-designs-modern_343694-2132.jpg?semt=ais_user_personalization&w=740&q=80) no-repeat;
+    background: url(https://img.freepik.com/free-vector/background-gradient-green-color-designs-modern_343694-2132.jpg?semt=ais_user_personalization&w=740&q=80) no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@ header{
    }
 
 .btn{
-    color: #000;
+    color: #f8f4f4;
     cursor: pointer;
     border: 2px solid #f0e8e8;
     border-radius:10px ;
@@ -61,9 +61,16 @@ header{
     margin-right: 20px;
     width: 100px;     
     height: 50px;   
-    background: #eeebeb;
+    background: transparent;
+    transition: .5s ease;
    }
   
+.btn:hover{
+   color: #000;
+   background: #fcf9f9;
+ }  
+
+
 h2{
     justify-content: center;
     align-items: center;
@@ -85,7 +92,17 @@ h2{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition:transform .5s ease, 0.2s ease ;
+    transform: scale(0);
    }
+
+.wrapper.active{
+    height: 500px;
+   }
+
+.wrapper.active_popup{
+    transform: scale(1);
+}
  
 .input-box{
     position: relative;
@@ -200,3 +217,23 @@ button:hover{
     border-bottom-left-radius: 20px  ;
    }
 
+.wrapper .form-login-box {
+    transition: 0.18s ease ;
+    transform: translateX(0);
+   }
+
+ .wrapper.active .form-login-box {
+    transition: none;
+    transform: translateX(-400px);
+ }  
+
+ .wrapper .form-register-box{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+   }
+
+.wrapper.active .form-register-box{
+     transition: 0.18s ease ;
+     transform: translateX(0);
+}
